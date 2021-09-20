@@ -1,0 +1,23 @@
+.mutant-animal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 0;
+}
+.mutant-right-part {
+  width: 730px;
+  text-align: left;
+  padding: 0 20px;
+}
+.mutant-animal img {
+  width: 350px;
+  padding: 0 20px;
+  height: 350px;
+}
+.mutant-right-part span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.mutant-right-part > span {
+  font-weight: 100;
+}

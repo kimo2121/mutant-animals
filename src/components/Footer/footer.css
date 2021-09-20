@@ -1,0 +1,26 @@
+.footer {
+  background-color: #111111;
+  padding: 80px 0;
+}
+.footer-inner {
+  width: 1140px;
+  margin: 0 auto;
+}
+.footer-logo img {
+  width: 100px;
+  height: 35px;
+}
+.footer-socials {
+  margin: 2vh 0;
+}
+.footer-socials svg {
+  width: 18px;
+  height: 21.6px;
+  fill: #777777;
+}
+.footer-socials a {
+  margin: 0 1vw;
+}
+.footer-inner p {
+  color: #777777;
+}

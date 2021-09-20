@@ -1,12 +1,21 @@
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 8px 16px;
   height: 62.3px;
+  position: absolute;
+  width: 100%;
   box-sizing: border-box;
 }
 .logo img {
   width: 100px;
   height: 34.5px;
+}
+.interal-links a {
+  margin-right: 2vw;
+  color: white;
+}
+.interal-links a:first-child {
+  color: #f24259;
 }

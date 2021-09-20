@@ -1,0 +1,15 @@
+.h-one,
+.h-two {
+  padding-left: 10px;
+  display: block;
+  font-size: 38px;
+  font-weight: 100;
+  border-left: 1px solid #eee;
+}
+.h-two {
+  font-weight: 500;
+  border-left: 1px solid #dc3545;
+}
+.header {
+  text-align: left;
+}

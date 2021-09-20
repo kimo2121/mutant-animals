@@ -1,0 +1,27 @@
+.team {
+  padding: 100px 0;
+  width: 1140px;
+  margin: 0 auto;
+}
+.members {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.member {
+  width: 350px;
+  height: 321px;
+  margin: 0 2vw;
+}
+.member img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+.member img:hover {
+  transform: scale(1.2);
+}
+.member svg {
+  width: 14px;
+  height: 17.6px;
+}
