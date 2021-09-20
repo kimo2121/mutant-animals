@@ -9,8 +9,8 @@
 }
 .section-container {
   display: flex;
-  justify-content: space-between;
-  width: 1140px;
+  justify-content: center;
+  /* width: 1140px; */
   height: 150px;
   margin: 0 auto;
 }
@@ -21,6 +21,11 @@
   width: 100%;
   height: 350px;
 }
+.first {
+  width: 350px;
+  text-align: center;
+  margin: 0 15px;
+}
 .numbers-section svg {
   width: 45px;
   height: 54.4px;
@@ -29,4 +34,31 @@
 .first {
   z-index: 2;
   color: white;
+}
+@media screen and (max-width: 1200px) {
+  .first {
+    width: 290px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .first {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+  }
+  .numbers-section {
+    height: 802px;
+  }
+  .number-backdrop {
+    height: 802px;
+  }
+  .first {
+    margin-bottom: 50px;
+  }
+  .section-container {
+    /* height: fit-content; */
+  }
 }

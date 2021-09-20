@@ -5,12 +5,14 @@
 }
 .dates-container {
   display: flex;
+  margin-top: 7vh;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
 }
 .date-map {
   background-color: white;
+  box-shadow: 0px 0px 12px 12px #77777711;
   width: 350px;
   padding: 30px 15px;
   height: 194.8px;
@@ -22,4 +24,37 @@
   width: 30px;
   height: 36.8px;
   fill: #f24259;
+}
+
+@media screen and (max-width: 1200px) {
+  .road-map {
+    width: 960px;
+  }
+  .date-map {
+    width: 290px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .road-map {
+    width: 720px;
+  }
+  .date-map {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .road-map {
+    width: 540px;
+  }
+  .date-map {
+    width: 510px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .road-map {
+    width: 100%;
+  }
+  .date-map {
+    width: 100%;
+  }
 }

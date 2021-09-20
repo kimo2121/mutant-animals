@@ -1,0 +1,65 @@
+.get-in-touch {
+  width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 80px 50px;
+}
+.form {
+  display: flex;
+  margin-top: 7vh;
+  flex-direction: column;
+}
+.name-first-last {
+  justify-content: space-between;
+  display: flex;
+}
+.name-first-last input {
+  width: 45%;
+  margin-bottom: 2vh;
+}
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 0;
+  background: #f7f7f7;
+  border-radius: 5px;
+}
+.form textarea {
+  min-height: 160px;
+}
+.subject,
+.form textarea {
+  margin-bottom: 2vh;
+}
+@media screen and (max-width: 1200px) {
+  .get-in-touch {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .get-in-touch {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .get-in-touch {
+    width: 540px;
+  }
+  .name-first-last {
+    flex-direction: column;
+  }
+  .name-first-last input {
+    width: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .get-in-touch {
+    width: 100%;
+  }
+  .name-first-last {
+    flex-direction: column;
+  }
+  .name-first-last input {
+    width: auto;
+  }
+}

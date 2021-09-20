@@ -11,7 +11,8 @@
 .member {
   width: 350px;
   height: 321px;
-  margin: 0 2vw;
+  margin: 0 15px;
+  box-sizing: border-box;
 }
 .member img {
   width: 220px;
@@ -24,4 +25,33 @@
 .member svg {
   width: 14px;
   height: 17.6px;
+}
+@media screen and (max-width: 1200px) {
+  .team {
+    width: 960px;
+  }
+  .member {
+    width: 290px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .team {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .members {
+    flex-direction: column;
+  }
+  .team {
+    width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .members {
+    flex-direction: column;
+  }
+  .team {
+    width: 100%;
+  }
 }

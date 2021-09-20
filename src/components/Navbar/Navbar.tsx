@@ -10,8 +10,7 @@ const Navbar: React.FC = () => {
       </div>
       <div className="interal-links">
         <Link to="/">Mint Mutants</Link>
-        <Link to="/">View my mutants</Link>
-        <Link to="/">About</Link>
+        <Link to="/">Stroy</Link>
         <Link to="/">Roadmap</Link>
         <Link to="/">Team</Link>
         <Link to="/">Contact</Link>

@@ -3,15 +3,18 @@
   justify-content: center;
   align-items: flex-start;
   padding: 100px 0;
+  width: 1140px;
+  margin: 0 auto;
 }
 .mutant-right-part {
   width: 730px;
   text-align: left;
-  padding: 0 20px;
+  margin: 0 20px;
+  box-sizing: border-box;
 }
 .mutant-animal img {
   width: 350px;
-  padding: 0 20px;
+  margin: 0 20px;
   height: 350px;
 }
 .mutant-right-part span {
@@ -20,4 +23,61 @@
 }
 .mutant-right-part > span {
   font-weight: 100;
+}
+@media screen and (max-width: 1200px) {
+  .mutant-animal {
+    width: 960px;
+  }
+  .mutant-animal img {
+    width: 290px;
+    height: 290px;
+  }
+  .mutant-right-part {
+    width: 610px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .mutant-animal {
+    width: 100%;
+  }
+  .mutant-animal {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mutant-right-part {
+    width: 690px;
+  }
+  .mutant-animal img {
+    width: 690px;
+    margin-bottom: 8vh;
+    height: 690px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mutant-animal {
+    width: 100%;
+  }
+
+  .mutant-right-part {
+    width: 510px;
+  }
+  .mutant-animal img {
+    width: 510px;
+    margin-bottom: 8vh;
+    height: 510px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .mutant-animal {
+    width: 100%;
+  }
+
+  .mutant-right-part {
+    width: 100%;
+  }
+  .mutant-animal img {
+    width: 100%;
+    margin-bottom: 8vh;
+    height: 100%;
+  }
 }
