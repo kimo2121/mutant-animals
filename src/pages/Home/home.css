@@ -1,7 +1,7 @@
 .banner {
   background-image: url(/src/assets/images/bg2.jpg);
   background-size: cover;
-  height: 90vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,24 +9,23 @@
   justify-content: center;
   z-index: 2;
 }
-.particles {
-  color: red;
-}
+
 .banner-text-div {
-  z-index: 1000;
+  z-index: 1;
   width: 100%;
   color: white;
 }
 .banner-text-div p {
   font-size: 35px;
+  margin: 0;
   font-family: "Raleway", sans-serif;
   color: white;
 }
 
 .banner-text-div span {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif;
   margin: 2vh 0;
-  display: block;
+  display: block; */
 }
 .banner-btns button {
   font-family: "Poppins", sans-serif;
@@ -36,18 +35,16 @@
   justify-content: center;
   display: flex;
 }
-.banner-btns button:first-child {
-  width: 20vw !important;
-}
+
 .banner-backdrop {
   width: 100%;
-  z-index: 3;
-  height: 90vh;
+  z-index: 1;
+  height: 92vh;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.438);
 }
 
-.banner span {
+.banner-text-div > span {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   color: white;

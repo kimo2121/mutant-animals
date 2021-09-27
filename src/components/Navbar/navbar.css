@@ -5,7 +5,7 @@
   width: 100vw;
   display: flex;
   align-items: center;
-  z-index: 10000;
+  z-index: 10;
   justify-content: center;
   position: absolute;
   transition: height 0.3s;
@@ -75,6 +75,10 @@
   font-size: 14px;
   padding-bottom: 20px;
 }
+.MuiPaper-elevation8 {
+  z-index: 1000000000 !important;
+  position: absolute;
+}
 .accordion__content::-webkit-scrollbar {
   display: none;
 }
@@ -104,6 +108,15 @@
 .mobile-discord-link {
   text-decoration: none;
 }
+.MuiDialog-container .MuiDialogTitle-root,
+.MuiDialog-container .MuiSvgIcon-root,
+.MuiDialog-container .MuiButton-label {
+  color: white !important;
+  z-index: 100000;
+}
+.MuiList-root {
+  z-index: 100000000 !important;
+}
 .accordion__content a {
   color: white;
   margin: 2vh 0;
@@ -113,6 +126,14 @@
 .accordion__content a:hover {
   color: white;
   cursor: pointer;
+}
+.mobile-div-connect {
+  display: flex;
+  align-items: center;
+}
+.MuiList-root.MuiMenu-list.MuiList-padding
+  > .MuiListItem-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiListItem-gutters {
+  min-height: 0 !important;
 }
 @media screen and (max-width: 1200px) {
   .web-nav {
@@ -144,7 +165,7 @@
 }
 @media screen and (max-width: 990px) {
   .slide-outter {
-    width: 720px;
+    width: 700px;
     margin: 0 auto;
   }
   .accordion__content {
@@ -156,6 +177,8 @@
   .slide-outter {
     width: 540px;
     margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
   .accordion__content {
     width: 540px;
@@ -165,13 +188,13 @@
 @media screen and (max-width: 576px) {
   .accordion__content,
   .slide-outter {
-    width: 90%;
+    width: 100%;
   }
   .mobile-logo a {
     margin-right: 1vw;
     font-size: 16px;
   }
   .mobile-logo {
-    width: 70vw;
+    width: 40vw;
   }
 }

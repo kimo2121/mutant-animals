@@ -1,7 +1,6 @@
 import React from "react";
 import "./home.css";
 import "./beamAnim.scss";
-
 import MutantAnimals from "../../components/mutantAnimals/MutantAnimals";
 import NumbersSection from "../../components/NumbersSection/NumbersSection";
 import TheTeam from "../../components/TheTeam/TheTeam";
@@ -13,9 +12,19 @@ import twitter from "../../assets/images/twitter.png";
 import discord from "../../assets/images/discord.png";
 import telegram from "../../assets/images/telegram.png";
 import solana from "../../assets/images/solana.png";
-import AnimatedHeadline from "../../components/AnimatedHeadline/AnimatedHeadline";
+import { WalletMultiButton } from "@solana/wallet-adapter-material-ui";
+import Mint from "../../components/Mint/Mint";
+import * as anchor from "@project-serum/anchor";
 
-const Home: React.FC = () => {
+export interface HomeProps {
+  candyMachineId: anchor.web3.PublicKey;
+  config: anchor.web3.PublicKey;
+  connection: anchor.web3.Connection;
+  startDate: number;
+  treasury: anchor.web3.PublicKey;
+  txTimeout: number;
+}
+const Home = (props: HomeProps) => {
   return (
     <div className="home">
       <div className="banner">
@@ -26,14 +35,20 @@ const Home: React.FC = () => {
             <h1>ARE YOU A </h1>
             <h1></h1>
           </div>
-          {/* <AnimatedHeadline /> */}
           <span>Get ready for a mutant invasion on solana blockchain</span>
+          <br />
+          <br />
           <div className="banner-btns">
             <ButtonComponent className="btn1 btn1-slide" label="THE STORY" />
-            <ButtonComponent
-              className="btn2"
-              label="MINT DATE: OCTOBER 20, 2021"
+            <Mint
+              candyMachineId={props.candyMachineId}
+              config={props.config}
+              connection={props.connection}
+              startDate={props.startDate}
+              treasury={props.treasury}
+              txTimeout={props.txTimeout}
             />
+            {/* <ButtonComponent label="MINT DATE: OCTOBER 20, 2021" /> */}
           </div>
           <div className="banner-socials">
             <a
@@ -60,6 +75,7 @@ const Home: React.FC = () => {
           </a>
         </div>
       </div>
+
       <MutantAnimals />
       <NumbersSection />
       <RoadMap />
