@@ -6,11 +6,7 @@ interface btnTypes {
   label?: string;
 }
 const ButtonComponent: React.FC<btnTypes> = ({ label, className }) => {
-  return (
-    <div className={className}>
-      <span>{label}</span>
-    </div>
-  );
+  return <div className={className}>{label}</div>;
 };
 
 export default ButtonComponent;

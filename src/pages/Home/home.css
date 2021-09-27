@@ -1,30 +1,99 @@
 .banner {
   background-image: url(/src/assets/images/bg2.jpg);
-  background-size: 100% 100%;
-  height: 100vh;
+  background-size: cover;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-position: left center;
   justify-content: center;
   z-index: 2;
 }
 .particles {
   color: red;
 }
-.banner-backdrop {
+.banner-text-div {
+  z-index: 1000;
   width: 100%;
-  z-index: 3;
-  height: 100vh;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.438);
+  color: white;
 }
-.banner p {
+.banner-text-div p {
   font-size: 35px;
   font-family: "Raleway", sans-serif;
   color: white;
 }
+
+.banner-text-div span {
+  font-family: "Poppins", sans-serif;
+  margin: 2vh 0;
+  display: block;
+}
+.banner-btns button {
+  font-family: "Poppins", sans-serif;
+}
+.banner-btns {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+}
+.banner-btns button:first-child {
+  width: 20vw !important;
+}
+.banner-backdrop {
+  width: 100%;
+  z-index: 3;
+  height: 90vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.438);
+}
+
 .banner span {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 13px;
   color: white;
+  font-weight: 100;
+}
+.animated-banner-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animated-banner-text h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+}
+.banner-socials {
+  margin: 5vh 0;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.banner-socials img {
+  width: 32px;
+  filter: grayscale(100%);
+  height: 32px;
+  margin: 0 2vw;
+  transition: all 1.2s;
+}
+.banner-socials img:hover {
+  transform: scale(1.2);
+  filter: grayscale(0);
+}
+@media screen and (max-width: 990px) {
+  .animated-banner-text h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .animated-banner-text h1 {
+    font-size: 30px;
+  }
+  .banner-text-div p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner-btns {
+    flex-direction: column;
+  }
 }

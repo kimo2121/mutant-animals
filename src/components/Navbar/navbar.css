@@ -1,18 +1,177 @@
 .navbar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 8px 16px;
-  height: 62.3px;
-  position: absolute;
-  width: 100%;
+  z-index: 10;
+  background-color: transparent;
   box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  z-index: 10000;
+  justify-content: center;
+  position: absolute;
+  transition: height 0.3s;
+  padding: 20px 0 20px 0;
+  height: 103px;
+}
+.navbar.height {
+  height: 65.6px;
+  text-align: center;
+  position: fixed;
+  background-color: white;
+}
+.web-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo.height a {
+  font-size: 20px;
 }
 .logo img {
   width: 100px;
   height: 34.5px;
 }
-.interal-links a {
-  margin-right: 2vw;
+.logo {
+  display: flex;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
   color: white;
+  transition: all 0.3s;
+  margin: 0 1vw;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.nav-links a:hover {
+  color: white;
+}
+
+.logo a {
+  font-family: "Aclonica", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: #ecd19a;
+  align-items: center;
+  transition: all 0.3s;
+}
+.mobile-logo a {
+  font-size: 20px;
+}
+.accordion__content {
+  overflow: auto;
+  transition: max-height 0.4s ease;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+.accordion__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.accordion__content::-webkit-scrollbar {
+  display: none;
+}
+.slide-menu {
+  display: none;
+}
+.nav-links.navabr a {
+  color: black;
+}
+.active {
+  /* color: white; */
+}
+.slide-menu-icon {
+  position: relative;
+  z-index: 100000;
+  font-size: 20px;
+  width: 17.5px;
+  height: 20px;
+  fill: white;
+}
+.slide-menu-icon.navbar {
+  fill: black;
+}
+.nav-links a:hover {
+  cursor: pointer;
+}
+.mobile-discord-link {
+  text-decoration: none;
+}
+.accordion__content a {
+  color: white;
+  margin: 2vh 0;
+  transition: color 0.1s;
+  letter-spacing: 1px;
+}
+.accordion__content a:hover {
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .web-nav {
+    width: 930px;
+  }
+}
+@media screen and (max-width: 976px) {
+  .nav-links {
+    display: none;
+  }
+  .web-nav {
+    display: none;
+  }
+  .navbar.height,
+  .navbar {
+    height: fit-content;
+  }
+
+  .slide-menu {
+    display: block;
+  }
+  .slide-outter {
+    display: flex;
+    align-items: center;
+    z-index: 100000 !important;
+    position: relative;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 990px) {
+  .slide-outter {
+    width: 720px;
+    margin: 0 auto;
+  }
+  .accordion__content {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slide-outter {
+    width: 540px;
+    margin: 0 auto;
+  }
+  .accordion__content {
+    width: 540px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .accordion__content,
+  .slide-outter {
+    width: 90%;
+  }
+  .mobile-logo a {
+    margin-right: 1vw;
+    font-size: 16px;
+  }
+  .mobile-logo {
+    width: 70vw;
+  }
 }
