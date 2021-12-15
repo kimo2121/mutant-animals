@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonComponent from "../ButtonCopmonent/ButtonComponent";
 import "./dividerWithBG.css";
 
 const DividerWithBG = () => {

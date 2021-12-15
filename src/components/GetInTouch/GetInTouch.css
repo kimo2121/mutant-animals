@@ -15,22 +15,37 @@
 }
 .name-first-last input {
   width: 45%;
+  outline: none;
   margin-bottom: 2vh;
 }
 .form input,
 .form textarea {
   padding: 10px;
+  outline: none;
   border: 0;
   background: #f7f7f7;
   border-radius: 5px;
 }
 .form textarea {
   min-height: 160px;
+  resize: none;
 }
 .subject,
 .form textarea {
   margin-bottom: 2vh;
 }
+.form input::placeholder,
+.form textarea::placeholder {
+  font-family: "Poppins", sans-serif !important;
+}
+
+@media screen and (max-width: 500px) {
+  .btn1,
+  .contact-submit {
+    margin: 1vh auto;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .get-in-touch {
     width: 960px;

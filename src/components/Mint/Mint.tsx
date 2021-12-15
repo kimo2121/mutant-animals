@@ -15,25 +15,26 @@ import {
 } from "../../utils/candy-machine";
 import styled from "styled-components";
 
-const CounterText = styled.span``; // add your styles here
+const CounterText = styled.span``;
 const MintButton = styled(Button)`
-  padding: 5px 13px !important;
+  padding: 10px 30px !important;
   border: 1px solid #eee !important;
   border-radius: 3px !important;
   text-transform: uppercase !important;
-  font-size: 9px !important;
-  height: 25px !important;
+  font-size: 13px !important;
   font-weight: 500 !important;
   letter-spacing: 1px !important;
   color: white !important;
   width: 150px;
+  height: 100%;
   position: relative !important;
   -webkit-animation-delay: 1.2s !important;
+  line-height: 100%;
   animation-delay: 1.2s !important;
   border: 1px solid white !important;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) !important;
   background-color: #f24259 !important;
-  border-color: #f24259 !important;
+  border: 1px solid #f24259 !important;
   &:hover {
     color: #000 !important;
     background-color: transparent !important;
@@ -57,6 +58,9 @@ const MintButton = styled(Button)`
     color: black !important !important;
     background: white !important;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) !important;
+  }
+  span {
+    line-height: 100%;
   }
   span:before {
     color: black !important;

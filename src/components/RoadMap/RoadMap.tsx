@@ -7,50 +7,51 @@ import { ReactComponent as Startup } from "../../assets/icons/startup.svg";
 import { ReactComponent as Gamepad } from "../../assets/icons/gamepad.svg";
 import { ReactComponent as Eye } from "../../assets/icons/eye.svg";
 import { ReactComponent as Plus } from "../../assets/icons/plus.svg";
+import TopicIcon from "../TopicIcon/TopicIcon";
 const RoadMap: React.FC = () => {
   return (
-    <div className="road-map">
+    <div id="RoadMap" className="road-map">
       <Header text1="Awesome" text2="Roadmap" />
       <div className="dates-container">
-        <div className="date-map">
-          <Radiation />
-          <h3>October 2021</h3>
-          <span>Minting the 10,000 mutant animals.</span>
-        </div>
-        <div className="date-map">
-          <MoneyBag1 />
-          <h3>November 2021</h3>
-          <span>Marketplace & Solanart</span>
-        </div>
-        <div className="date-map">
-          <Startup />
-          <h3>January 2022</h3>
-          <span>3D Viewer & perks airdrop</span>
-        </div>
-        <div className="date-map">
-          <Gamepad />
-          <h3>March 2022</h3>
-          <span>
-            Beta launch of the Desktop version of MutantGames. More details to
-            come...
-          </span>
-        </div>
-        <div className="date-map">
-          <Eye />
-          <h3>May 2022</h3>
-          <span>
-            Beta launch of the mobile version of MutantGames. More details to
-            come...
-          </span>
-        </div>
-        <div className="date-map">
-          <Plus />
-          <h3>July 2022</h3>
-          <span>
-            Airdrop of new perks for the MutantGames. (Only eligible for
-            original owners)
-          </span>
-        </div>
+        <TopicIcon
+          className="date-map"
+          icon={<Radiation />}
+          text="October 2021"
+          topic="Minting the 10,000 mutant animals."
+        />
+        <TopicIcon
+          className="date-map"
+          icon={<MoneyBag1 />}
+          text="November 2021"
+          topic="Marketplace & Solanart"
+        />
+        <TopicIcon
+          className="date-map"
+          icon={<Startup />}
+          text="January 2022"
+          topic="3D Viewer & perks airdrop"
+        />
+        <TopicIcon
+          className="date-map"
+          icon={<Gamepad />}
+          text="March 2022"
+          topic="Beta launch of the Desktop version of MutantGames. More details to
+          come..."
+        />
+        <TopicIcon
+          className="date-map"
+          icon={<Eye />}
+          text="May 2022"
+          topic="Beta launch of the mobile version of MutantGames. More details to
+          come..."
+        />
+        <TopicIcon
+          className="date-map"
+          icon={<Plus />}
+          text="July 2022"
+          topic="Airdrop of new perks for the MutantGames. (Only eligible for
+            original owners)"
+        />
       </div>
     </div>
   );

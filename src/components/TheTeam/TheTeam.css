@@ -4,6 +4,7 @@
   margin: 0 auto;
 }
 .members {
+  margin-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +26,16 @@
 .member svg {
   width: 14px;
   height: 17.6px;
+}
+.member h6 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: inherit;
+  margin: 20px 0 10px;
+}
+.member span {
+  font-size: 14px;
+  color: #959595;
 }
 @media screen and (max-width: 1200px) {
   .team {

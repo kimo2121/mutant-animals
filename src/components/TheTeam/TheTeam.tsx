@@ -7,37 +7,26 @@ import { ReactComponent as Twitter } from "../../assets/icons/twitter.svg";
 import Header from "../Header/Header";
 const TheTeam: React.FC = () => {
   return (
-    <div className="team">
+    <div id="Team" className="team">
       <Header text1="The" text2="Team" />
       <div className="members">
         <div className="member">
           <img src={member1} alt="" />
-          <p>Jason Thomas</p>
+          <h6>Jason Thomas</h6>
           <span>Poject founder & Marketer</span>
           <br />
-          <a href="">
-            <Twitter />
-          </a>
         </div>
         <div className="member">
           <img src={member2} alt="" />
-          <p>Anonymous</p>
+          <h6>Anonymous</h6>
           <span>Artist & Designer</span>
           <br />
-
-          <a href="">
-            <Twitter />
-          </a>
         </div>
         <div className="member">
           <img src={member3} alt="" />
-          <p>Roman Atsuco</p>
+          <h6>Roman Atsuco</h6>
           <span>Developper</span>
           <br />
-
-          <a href="">
-            <Twitter />
-          </a>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./navbar.css";
 import { Link } from "react-scroll";
-import { ReactComponent as Menu } from "../../assets/icons/list.svg";
+import { ReactComponent as Menu } from "../../assets/icons/Menu.svg";
 import logoIcon from "../../assets/icons/logo-light.png";
 import logoIcon2 from "../../assets/icons/logo-dark.png";
 import { WalletMultiButton } from "@solana/wallet-adapter-material-ui";
@@ -54,16 +54,21 @@ const Navbar: React.FC = () => {
         </div>
         <div className={navbar ? "nav-links navabr" : "nav-links"}>
           <ConnectButton />
-          <Link activeClass="active" smooth={true} duration={800} to="Home">
+          <Link
+            activeClass="active"
+            smooth={true}
+            duration={800}
+            to="Mutant-Animals"
+          >
             Story
           </Link>
-          <Link activeClass="active" smooth={true} duration={800} to="About">
+          <Link activeClass="active" smooth={true} duration={800} to="RoadMap">
             Roadmap
           </Link>
-          <Link activeClass="active" smooth={true} duration={800} to="Mint">
+          <Link activeClass="active" smooth={true} duration={800} to="Team">
             Team
           </Link>
-          <Link activeClass="active" smooth={true} duration={800} to="RoadMap">
+          <Link to="Contact" activeClass="active" smooth={true} duration={800}>
             Contact
           </Link>
         </div>
@@ -86,10 +91,10 @@ const Navbar: React.FC = () => {
             <Menu
               onClick={toggleAccordion}
               className={
-                menu
-                  ? "slide-menu-icon active"
-                  : navbar
+                navbar
                   ? "slide-menu-icon navbar"
+                  : menu
+                  ? "slide-menu-icon active"
                   : "slide-menu-icon"
               }
             />
@@ -105,7 +110,7 @@ const Navbar: React.FC = () => {
             onClick={toggleAccordion}
             smooth={true}
             duration={800}
-            to="Home"
+            to="Mutant-Animals"
           >
             Story
           </Link>
@@ -114,7 +119,7 @@ const Navbar: React.FC = () => {
             onClick={toggleAccordion}
             smooth={true}
             duration={800}
-            to="About"
+            to="RoadMap"
           >
             Roadmap
           </Link>
@@ -123,7 +128,7 @@ const Navbar: React.FC = () => {
             onClick={toggleAccordion}
             smooth={true}
             duration={800}
-            to="Mint"
+            to="Team"
           >
             Team
           </Link>
@@ -132,7 +137,7 @@ const Navbar: React.FC = () => {
             onClick={toggleAccordion}
             smooth={true}
             duration={800}
-            to="RoadMap"
+            to="Contact"
           >
             Contact
           </Link>

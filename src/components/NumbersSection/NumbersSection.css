@@ -12,6 +12,7 @@
   justify-content: center;
   /* width: 1140px; */
   height: 150px;
+  font-family: "Raleway", sans-serif;
   margin: 0 auto;
 }
 .number-backdrop {
@@ -25,6 +26,9 @@
   width: 350px;
   text-align: center;
   margin: 0 15px;
+}
+.first h1 {
+  font-size: 40px;
 }
 .numbers-section svg {
   width: 45px;

@@ -3,13 +3,13 @@ import "./MutantAnimals.css";
 import mutants from "../../assets/images/mutants.gif";
 const MutantAnimals = () => {
   return (
-    <div className="mutant-animal">
+    <div id="Mutant-Animals" className="mutant-animal">
       <img src={mutants} alt="" />
       <div className="mutant-right-part">
-        <span>
+        <h4>
           We Are The
           <span> Mutant Animals.</span>
-        </span>
+        </h4>
         <p>
           Radiation from solar flares baked the earth like an easy bake oven,
           and cellular life began to transform. Humans found themselves morphing
@@ -23,6 +23,12 @@ const MutantAnimals = () => {
           food, and learned the new food chain. The only rules are the same as
           they always were: survival of the fittest. The war will begin soon
           after every mutant are alive on the blockchain.
+        </p>
+        <p>
+          <b>Will you be a king or just another number in the herd ?</b>
+          <br />
+          King's are the rarest version of mutant animals followed by leaders
+          and then survivors.
         </p>
       </div>
     </div>
